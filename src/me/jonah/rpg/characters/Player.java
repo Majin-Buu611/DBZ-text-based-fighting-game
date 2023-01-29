@@ -3,9 +3,9 @@ package me.jonah.rpg.characters;
 import me.jonah.rpg.characters.Character;
 
 public class Player extends Character {
-private int level;
-private int exp;
-private int expToNextLevel;
+private double level;
+private double exp;
+private double expToNextLevel;
 public Player(String name, int health, int maxHealth, int attack, int defense, int level, int exp, int expToNextLevel) {
 super (name, health, maxHealth, attack, defense);
 this.level = level;
