@@ -1,6 +1,6 @@
 package me.jonah.rpg.characters.enemies;
 
-import me.jonah.rpg.characters.Enemy;
+import me.jonah.rpg.characters.enemies.Enemy;
 
 public class Zombie extends Enemy {
 public Zombie(String name, int health, int maxHealth, int attack, int defense, int minLevel, int expOnDeath) {

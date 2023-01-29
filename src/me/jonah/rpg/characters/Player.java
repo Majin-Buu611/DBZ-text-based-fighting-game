@@ -52,7 +52,7 @@ levelup();
 public void levelup() {
 level++;
 exp = 0;
-expToNextLevel = (int) 20 * (Math.pow(level, 2));
+expToNextLevel = 20 * (Math.pow(level, 2));
 maxHealth += level * 10;
 health += maxHealth / 2;
 attack+= level* 10;
