@@ -4,7 +4,7 @@ import me.jonah.rpg.characters.Character;
 
 public abstract class Enemy extends Character {
 protected int minLevel;
-protected int expGivenOnDeath;
+protected int expOnDeath;
 public Enemy(String name, int health, int maxHealth, int attack, int defense, int expOnDeath, int expGivenOnDeath) {
 super (name, health, maxHealth, attack, defense);
 this.minLevel = minLevel;
