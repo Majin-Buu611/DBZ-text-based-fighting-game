@@ -25,8 +25,8 @@ public class Main {
         break;
       }
       if (!enemy.isAlive()) {
-        System.out.println("You have defeated " + enemy.getName() + " and gained " + enemy.getExp() + " exp.");
-        player.gainExp(enemy.getExp());
+        System.out.println("You have defeated " + enemy.getName() + " and gained " + enemy.getExpOnDeath() + " exp.");
+        player.gainExp(enemy.getExpOnDeath());
         enemy = chooseEnemy(player, enemies);
       }
     }
@@ -35,7 +35,7 @@ public class Main {
   public static Enemy chooseEnemy(Player player, List<Enemy> enemies) {
     List<Enemy> availableEnemies = new ArrayList<>();
     for (Enemy e : enemies) {
-      if (e.getMinLevel() <= player.getMinLevel()) {
+      if (e.getMinLevel() <= player.getLevel()) {
         availableEnemies.add(e);
       }
     }
