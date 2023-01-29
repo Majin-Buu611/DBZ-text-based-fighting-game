@@ -3,6 +3,7 @@ package me.jonah.rpg;
 import java.util.ArrayList;
 import java.util.List;
 import me.jonah.rpg.characters.*;
+import me.jonah.rpg.characters.enemies.*;
 
 public class Main {
   public static void main(String[] args) {
