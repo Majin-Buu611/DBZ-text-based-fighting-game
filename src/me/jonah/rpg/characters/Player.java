@@ -1,5 +1,7 @@
 package me.jonah.rpg.characters;
 
+import me.jonah.rpg.characters.Character;
+
 public class Player extends Character {
 private int level;
 private int exp;
