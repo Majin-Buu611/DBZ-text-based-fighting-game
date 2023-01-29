@@ -3,10 +3,10 @@ package me.jonah.rpg.characters;
 import me.jonah.rpg.characters.Character;
 
 public class Player extends Character {
-private int level;
-private int exp;
-private int expToNextLevel;
-public Player(String name, int health, int maxHealth, int attack, int defense, int level, int exp, int expToNextLevel) {
+private double level;
+private double exp;
+private double expToNextLevel;
+public Player(String name, int health, int maxHealth, int attack, int defense, double level, double exp, double expToNextLevel) {
 super (name, health, maxHealth, attack, defense);
 this.level = level;
 this.exp = exp;
@@ -52,7 +52,7 @@ levelup();
 public void levelup() {
 level++;
 exp = 0;
-expToNextLevel = 20 * (Math.pow(level, 2));
+expToNextLevel = (int) 20 * (Math.pow(level, 2));
 maxHealth += level * 10;
 health += maxHealth / 2;
 attack+= level* 10;
