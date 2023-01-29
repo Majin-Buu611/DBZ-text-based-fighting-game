@@ -35,7 +35,7 @@ public class Main {
   public static Enemy chooseEnemy(Player player, List<Enemy> enemies) {
     List<Enemy> availableEnemies = new ArrayList<>();
     for (Enemy e : enemies) {
-      if (e.getLevel() <= player.getLevel()) {
+      if (e.getMinLevel() <= player.getMinLevel()) {
         availableEnemies.add(e);
       }
     }
