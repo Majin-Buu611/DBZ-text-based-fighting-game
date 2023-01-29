@@ -7,12 +7,12 @@ import me.jonah.rpg.characters.enemies.*;
 
 public class Main {
   public static void main(String[] args) {
-    Player player = new Player("Player 1", 100, 100, 20, 10, 1, 0, 20);
+    Player player = new Player("Player 1", 100, 100, 20, 20, 1, 0, 20);
     List<Enemy> enemies = new ArrayList<>();
-    enemies.add(new Zombie("Zombie 1", 50, 50, 15, 5, 1));
-    enemies.add(new Zombie("Zombie 2", 60, 60, 18, 6, 2));
-    enemies.add(new Zombie("Zombie 3", 70, 70, 21, 7, 3));
-    enemies.add(new Zombie("Zombie 4", 80, 80, 24, 8, 4));
+    enemies.add(new Zombie("Zombie 1", 50, 50, 20, 10, 1, 20));
+    enemies.add(new Zombie("Zombie 2", 60, 60, 40, 40, 3, 100));
+    enemies.add(new Zombie("Zombie 3", 70, 70, 100, 50, 7, 200));
+    enemies.add(new Zombie("Zombie 4", 100, 100, 200, 100, 15, 1000));
 
     Enemy enemy = chooseEnemy(player, enemies);
     while (player.isAlive() && enemy.isAlive()) {
